@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Association Le Bas Vert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    
+    :root {
+      --primary: #1f3d2b;
+      --secondary: #4f7f5f;
+      --accent: #a3c9a8;
+      --light: #f5f7f6;
+      --dark: #1c1c1c;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+	
+	html {
+    scroll-behavior: smooth;
+	}
+
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.8;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--primary);
+      padding: 15px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      color: white;
+      font-size: 1.6em;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      height: 90vh;
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url("https://i.imgur.com/YHgqJLD.jpeg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 10%;
+      color: white;
+    }
+
+    header h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      padding: 90px 10%;
+      background-color: white;
+    }
+
+    section:nth-child(even) {
+      background-color: var(--light);
+    }
+
+    section h3 {
+      font-size: 2.2em;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .content {
+      max-width: 1100px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      padding: 70px 10%;
+      text-align: center;
+    }
+
+    footer h4 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    footer p {
+      font-size: 1.1em;
+    }
+
+    .spacer {
+      height: 70px;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Le Bas Vert</h1>
+  <ul>
+    <li><a href="#presentation">Présentation</a></li>
+    <li><a href="#ateliers">Ateliers</a></li>
+    <li><a href="#valeurs">Valeurs</a></li>
+	<li><a href="#partenaires">Partenaires</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="spacer"></div>
+
+<header>
+  <div>
+    <h2>Association Le Bas Vert</h2>
+    <p>
+      Un espace associatif moderne, solidaire et intergénérationnel au cœur du quartier.
+      L’Association Le Bas Vert favorise le lien social, l’échange de savoirs et le bien‑être
+      à travers une grande diversité d’activités accessibles à tous.
+    </p>
+  </div>
+</header>
+
+<section id="presentation">
+  <div class="content">
+    <h3>Présentation de l’association</h3>
+    <p>
+      L’Association Le Bas Vert est un acteur local engagé dans la vie de quartier. Elle œuvre
+      quotidiennement pour renforcer la cohésion sociale, lutter contre l’isolement et
+      promouvoir l’inclusion par le biais d’ateliers éducatifs, culturels, sportifs et
+      créatifs.
+    </p>
+    <p>
+      L’association accueille enfants, parents, adultes et seniors dans un cadre chaleureux
+      et structuré, favorisant le respect, la transmission intergénérationnelle et la
+      participation citoyenne.
+    </p>
+  </div>
+</section>
+
+<section id="valeurs">
+  <div class="content">
+    <h3>Nos valeurs et objectifs</h3>
+    <p>
+      • Renforcer le lien social et la solidarité locale<br>
+      • Favoriser l’autonomie et l’apprentissage<br>
+      • Encourager la créativité et l’expression personnelle<br>
+      • Soutenir la parentalité et les échanges familiaux<br>
+      • Proposer des activités accessibles à tous
+    </p>
+  </div>
+</section>
+
+<section id="ateliers">
+  <div class="content">
+    <h3>Nos ateliers et activités</h3>
+
+    <p><strong>Atelier Couture</strong> – Apprentissage, création textile et partage de savoir‑faire.</p>
+    <div class="gallery">
+      <img src="https://i.imgur.com/ZJ2CPa3.jpeg">
+      <img src="https://i.imgur.com/xsQ2CuF.jpeg">
+      <img src="https://i.imgur.com/foDJcGt.jpeg">
+    </div>
+
+    <p><strong>Atelier Informatique</strong> – Initiation numérique, démarches en ligne, bureautique.</p>
+    <div class="gallery">
+      <img src="https://i.imgur.com/7mOinxv.jpeg">
+      <img src="https://i.imgur.com/MAl6yoM.jpeg">
+      <img src="https://i.imgur.com/badPjyw.jpeg">
+    </div>
+
+    <p><strong>Atelier Cuisine & Repas partagés</strong> – Transmission culinaire et convivialité.</p>
+    <div class="gallery">
+      <img src="https://i.imgur.com/6sz0eBV.jpeg">
+      <img src="https://i.imgur.com/NH9Yw8P.jpeg">
+      <img src="https://i.imgur.com/hTOCGcy.jpeg">
+    </div>
+
+    <p><strong>Sorties & échanges</strong> – Découvertes culturelles et moments de partage.</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+      <img src="https://i.imgur.com/i9NzeHx.jpeg">
+      <img src="https://i.imgur.com/GZcCvN9.jpeg">
+    </div>
+
+    <p><strong>Jardinage & Aquagym</strong> – Bien‑être, nature et activité physique douce.</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735">
+      <img src="https://i.imgur.com/Euf3Bwl.jpeg">
+      <img src="https://i.imgur.com/6H5Ir67.jpeg">
+    </div>
+
+    <p><strong>Ateliers Parents‑Enfants</strong> – Moments de complicité et d’éveil.</p>
+    <div class="gallery">
+      <img src="https://i.imgur.com/9EarQr4.jpeg">
+      <img src="https://i.imgur.com/o9EH1pG.jpeg">
+      <img src="https://i.imgur.com/xS3vpf0.jpeg">
+    </div>
+
+    <p><strong>Jeux de société</strong> – Loisirs intergénérationnels et convivialité.</p>
+    <div class="gallery">
+      <img src="https://i.imgur.com/xBfYXb9.jpeg">
+      <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09">
+      <img src="https://i.imgur.com/Rhwl9ZM.jpeg">
+    </div>
+
+    <p><strong>Club Musique</strong> – Découverte, pratique et partage musical.</p>
+    <div class="gallery">
+      <img src="https://i.imgur.com/UdpSNNG.jpeg">
+      <img src="https://i.imgur.com/0ydayHf.jpeg">
+      <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76">
+    </div>
+
+
+  </div>
+</section>
+<section id="Partenaires">
+    <h3>partenaires</h3>
+	  
+    <div class="gallery">
+      <img src="https://i.imgur.com/SAZ2LsF.jpeg">
+      <img src="https://i.imgur.com/9weiPSO.jpeg">
+      <img src="https://i.imgur.com/4vV7ZTF.jpeg">
+    </div>
+	
+    <p>
+        L’Association Le Bas Vert collabore avec différents partenaires
+        institutionnels, associatifs et locaux afin de développer des
+        projets solidaires et durables.
+    </p>
+</section>
+
+<footer id="contact">
+  <h4>Contact & Informations</h4>
+  <p>
+    Salle polyvalente du Bas Vernet<br>
+    Rue du Puyvalador 66000 Perpignan<br><br>
+    habi-eco66@live.fr 
+	📞 06 52 50 27 09
+  </p>
+</footer>
+
+</body>
+</html>
